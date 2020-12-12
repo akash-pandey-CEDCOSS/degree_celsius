@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Conversion</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="container  m-2 ">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-sm-10">
+                <form class="p-2">
+
+                    <fieldset>
+                        <legend id="change">Temperature Conversion</legend>
+
+                        <input type="number" id="temp" class="form-control w-50" placeholder="Temperature input">
+
+                        <select id="select" class="form-control w-50">
+                            <option selected disabled>Convert to..</option>
+                            <option value="fah">Celsius</option>
+                            <option value="cel">Fahrenhiet</option>
+                        </select>
+                        <input type="text" disabled id="display" class="form-control w-50">
+
+
+                        <input type="button" class="form-control w-50" value="Convert" onclick="onSubmit()">
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
